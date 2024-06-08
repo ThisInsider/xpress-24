@@ -1,0 +1,1 @@
+if(age>display_get_frequency()/30) draw_self();
