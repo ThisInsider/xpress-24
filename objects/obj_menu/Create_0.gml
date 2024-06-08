@@ -1,3 +1,5 @@
+is_menu_open = false;
+
 shake = 0;
 
 right_x = display_get_gui_width();
