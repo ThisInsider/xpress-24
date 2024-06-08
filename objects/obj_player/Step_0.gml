@@ -9,3 +9,17 @@ speed = lerp(speed, target_speed, 0.08*(delta_time/10000));
 
 x = clamp(x, 0, 8192-sprite_width);
 y = clamp(y, 0, 8192-sprite_height);
+
+
+age = age + 1;
+if ((keyboard_check(ord("W")) == true)
+    || (keyboard_check(ord("A")) == true)
+	|| (keyboard_check(ord("S")) == true)
+	|| (keyboard_check(ord("D")) == true)) {
+		
+	if (age - lastPlayed >= 22) {
+		audio_play_sound(sound_footstep, 0, false);
+		lastPlayed = age;
+	}	    
+}
+
