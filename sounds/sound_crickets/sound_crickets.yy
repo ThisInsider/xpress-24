@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sound_crickets",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":26.011791,
+  "name":"sound_crickets",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sound_crickets.wav",
+  "type":0,
+  "volume":1.0,
+}
