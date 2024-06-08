@@ -36,10 +36,12 @@
   "resources":[
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},},
+    {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"world","path":"rooms/world/world.yy",},},
     {"id":{"name":"spr_map","path":"sprites/spr_map/spr_map.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
+    {"id":{"name":"spr_right_hand","path":"sprites/spr_right_hand/spr_right_hand.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
