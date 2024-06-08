@@ -9,5 +9,6 @@ if(_w > display_get_width() || _h > display_get_height()){
 view_wport[0] = _w;
 view_hport[0] = _h;
 surface_resize(application_surface, _w, _h);
+display_set_gui_size(camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]));
 window_set_size(_w, _h);
 window_center();
