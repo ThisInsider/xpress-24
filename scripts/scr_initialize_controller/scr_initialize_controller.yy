@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_initialize_controller",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_initialize_controller",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
