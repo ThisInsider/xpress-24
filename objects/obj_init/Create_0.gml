@@ -1,4 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+global.debug = true;
 
-var freq = display_get_frequency()
+var _fps = display_get_frequency()
+game_set_speed(_fps, gamespeed_fps);
