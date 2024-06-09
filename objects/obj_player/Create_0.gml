@@ -1,4 +1,3 @@
-visible=false;
 enum PLAYER_STATES {
 	IDLE,
 	WALKING,
@@ -23,6 +22,7 @@ mouse_target_x = 0;
 mouse_target_y = 0;
 
 inventory = [ITEMS.FLASK, undefined, undefined, undefined];
+hand = [ELEMENTS.CL, ELEMENTS.FE, ELEMENTS.MG, ELEMENTS.NI, ELEMENTS.S, ELEMENTS.ZN];
 selected_slot = 0;
 
 // target direction

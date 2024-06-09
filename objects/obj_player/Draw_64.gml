@@ -1,6 +1,6 @@
 var _size = 30;
 var _offset = 20;
-var _space = 10;
+var _space = 10
 
 for(var _i=0; _i<4; _i++){
 	draw_set_color(c_white);
@@ -20,6 +20,7 @@ for(var _i=0; _i<array_length(inventory); _i++){
 	if(!is_undefined(_draw)) draw_sprite(_draw, 0, _offset+_i*(_space+_size)+(_size/2), display_get_gui_height()-_offset);
 }
 
+exit;
 // arrow direction to target
 
 // ovdje treba u point_direction dodati da on kuzi di se nalazi taj target koji trazi
@@ -97,7 +98,6 @@ var screen_center_y = display_get_gui_height() / 2;
 	
 	draw_sprite(spr_target_direction, dir, arrow_x, arrow_y);
 */
-
 
 // Assume the following values for the rectangle and padding
 var rect_left = 100;

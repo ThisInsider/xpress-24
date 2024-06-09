@@ -1,3 +1,14 @@
+enum ELEMENTS {
+	CL,
+	FE,
+	MG,
+	NI,
+	S,
+	ZN
+}
+
+
+
 is_menu_open = false;
 
 shake = 0;
