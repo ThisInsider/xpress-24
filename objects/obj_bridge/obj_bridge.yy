@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tree",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_bridge",
+  "eventList":[],
   "managed":true,
-  "name":"obj_tree",
+  "name":"obj_bridge",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_parent_depthobject",
-    "path":"objects/obj_parent_depthobject/obj_parent_depthobject.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_tree",
-    "path":"sprites/spr_tree/spr_tree.yy",
+    "name":"spr_bridge",
+    "path":"sprites/spr_bridge/spr_bridge.yy",
   },
   "spriteMaskId":null,
   "visible":true,

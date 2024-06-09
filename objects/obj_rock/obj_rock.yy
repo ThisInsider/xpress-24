@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tree",
+  "%Name":"obj_rock",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_tree",
+  "name":"obj_rock",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_tree",
-    "path":"sprites/spr_tree/spr_tree.yy",
+    "name":"spr_rock",
+    "path":"sprites/spr_rock/spr_rock.yy",
   },
   "spriteMaskId":null,
   "visible":true,
