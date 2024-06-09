@@ -1,5 +1,5 @@
 
-if(pressed_e<=1.5*display_get_frequency()){
+if(!e_complete){
 	draw_sprite(spr_key_e, 0, display_get_gui_width()-64, display_get_gui_height()-64);
 }
 if(show_press_q){
