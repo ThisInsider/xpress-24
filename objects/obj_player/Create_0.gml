@@ -23,3 +23,11 @@ mouse_target_y = 0;
 
 inventory = [ITEMS.FLASK, undefined, undefined, undefined];
 selected_slot = 0;
+
+// target direction
+
+
+
+
+
+
