@@ -1,61 +1,70 @@
-var _move_vertical = keyboard_check(ord("S")) - keyboard_check(ord("W"));
-var _move_horizontal =  keyboard_check(ord("D")) - keyboard_check(ord("A"));
 
-switch (keyboard_key)
-{
-    case ord("1"): selected_slot = 0; break;
-    case ord("2"): selected_slot = 1; break;
-    case ord("3"): selected_slot = 2; break;
-    case ord("4"): selected_slot = 3; break;
-}
-if(mouse_wheel_up()){
-	selected_slot = selected_slot+1>3?0:selected_slot+1;
-}else if(mouse_wheel_down()){
-	selected_slot = selected_slot-1<0?3:selected_slot-1;
-}
+	var _move_vertical = keyboard_check(ord("S")) - keyboard_check(ord("W"));
+	var _move_horizontal =  keyboard_check(ord("D")) - keyboard_check(ord("A"));
+	
+if(!obj_menu.is_menu_open){
 
-if(state == PLAYER_STATES.IDLE || state == PLAYER_STATES.WALKING){
-	target_speed = clamp(abs(_move_vertical)+abs(_move_horizontal), 0, 1) * move_speed * (delta_time/10000);
-	if(obj_menu.is_menu_open){
+	switch (keyboard_key)
+	{
+	    case ord("1"): selected_slot = 0; break;
+	    case ord("2"): selected_slot = 1; break;
+	    case ord("3"): selected_slot = 2; break;
+	    case ord("4"): selected_slot = 3; break;
+	}
+	if(mouse_wheel_up()){
+		selected_slot = selected_slot-1<0?3:selected_slot-1;
+	}else if(mouse_wheel_down()){
+		selected_slot = selected_slot+1>3?0:selected_slot+1;
+	}
+
+	if(state == PLAYER_STATES.IDLE || state == PLAYER_STATES.WALKING){
+		target_speed = clamp(abs(_move_vertical)+abs(_move_horizontal), 0, 1) * move_speed * (delta_time/10000);
+		if(collision_point(x+lengthdir_x(target_speed, direction), y+lengthdir_y(target_speed, direction), obj_tree, false, false)){
+			target_speed = target_speed/5;
+		}
+		if(target_speed > 0){
+			state = PLAYER_STATES.WALKING;
+		}else{
+			state = PLAYER_STATES.IDLE;
+		}
+	}
+
+	if (state == PLAYER_STATES.WALKING) {
+		age += 60/display_get_frequency();
+		if (age - last_played >= 22) {
+			audio_play_sound(sound_footstep, 0, false);
+			last_played = age;
+		}
+	}else if(age > 8){
+		age = 8;
+		last_played = 0;
+	}
+
+	if((state == PLAYER_STATES.IDLE || state == PLAYER_STATES.WALKING) && keyboard_check_pressed(vk_space)){
+		state = PLAYER_STATES.PUNCHING;
+		image_index = 0;
 		target_speed = 0;
+		var _spr = spr_player_punch_down;
+		alarm[0] = (sprite_get_number(_spr)/sprite_get_speed(_spr))*display_get_frequency();
 	}
-	if(target_speed > 0){
-		state = PLAYER_STATES.WALKING;
-	}else{
-		state = PLAYER_STATES.IDLE;
+	if((state == PLAYER_STATES.IDLE || state == PLAYER_STATES.WALKING) && mouse_check_button_pressed(mb_left)){
+		mouse_target_x = window_view_mouse_get_x(0);
+		mouse_target_y = window_view_mouse_get_y(0);
+		direction = point_direction(0, 0, mouse_target_x-x, mouse_target_y-y);
+		switch(inventory[selected_slot]){
+			case ITEMS.FLASK:
+				state = PLAYER_STATES.THROWING;
+				image_index = 0;
+				target_speed = 0;
+				var _spr = spr_player_throw_down;
+				alarm[0] = (sprite_get_number(_spr)/sprite_get_speed(_spr))*display_get_frequency();
+				alarm[2] = (16/sprite_get_speed(_spr))*display_get_frequency();
+		}
 	}
-}
-
-if (state == PLAYER_STATES.WALKING) {
-	age += 60/display_get_frequency();
-	if (age - last_played >= 22) {
-		audio_play_sound(sound_footstep, 0, false);
-		last_played = age;
-	}
-}else if(age > 8){
-	age = 8;
-	last_played = 0;
-}
-
-if((state == PLAYER_STATES.IDLE || state == PLAYER_STATES.WALKING) && keyboard_check_pressed(vk_space)){
-	state = PLAYER_STATES.PUNCHING;
-	image_index = 0;
+}else{
 	target_speed = 0;
-	var _spr = spr_player_punch_down;
-	alarm[0] = (sprite_get_number(_spr)/sprite_get_speed(_spr))*display_get_frequency();
-}
-if((state == PLAYER_STATES.IDLE || state == PLAYER_STATES.WALKING) && mouse_check_button_pressed(mb_left)){
-	mouse_target_x = window_view_mouse_get_x(0);
-	mouse_target_y = window_view_mouse_get_y(0);
-	direction = point_direction(0, 0, mouse_target_x-x, mouse_target_y-y);
-	switch(inventory[selected_slot]){
-		case ITEMS.FLASK:
-			state = PLAYER_STATES.THROWING;
-			image_index = 0;
-			target_speed = 0;
-			var _spr = spr_player_throw_down;
-			alarm[0] = (sprite_get_number(_spr)/sprite_get_speed(_spr))*display_get_frequency();
-			alarm[2] = (16/sprite_get_speed(_spr))*display_get_frequency();
+	if(state == PLAYER_STATES.WALKING){
+		state = PLAYER_STATES.IDLE;
 	}
 }
 

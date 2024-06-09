@@ -1,6 +1,6 @@
 if(follow != noone){
 	x_to = follow.x;
-	y_to = follow.y;
+	y_to = follow.y-follow.sprite_height/4;
 }
 
 x = lerp(x, x_to, 0.06*(delta_time/10000));
