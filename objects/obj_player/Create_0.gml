@@ -1,3 +1,4 @@
+visible=false;
 enum PLAYER_STATES {
 	IDLE,
 	WALKING,
