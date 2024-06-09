@@ -1,572 +1,126 @@
 {
-	"$GMProject": "",
-	"%Name": "XPress 24",
-	"AudioGroups": [
-		{
-			"$GMAudioGroup": "",
-			"%Name": "audiogroup_default",
-			"name": "audiogroup_default",
-			"resourceType": "GMAudioGroup",
-			"resourceVersion": "2.0",
-			"targets": -1
-		}
-	],
-	"configs": {
-		"children": [],
-		"name": "Default"
-	},
-	"defaultScriptType": 1,
-	"Folders": [
-		{
-			"$GMFolder": "",
-			"%Name": "Animation Curves",
-			"folderPath": "folders/Animation Curves.yy",
-			"name": "Animation Curves",
-			"resourceType": "GMFolder",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMFolder": "",
-			"%Name": "Extensions",
-			"folderPath": "folders/Extensions.yy",
-			"name": "Extensions",
-			"resourceType": "GMFolder",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMFolder": "",
-			"%Name": "Fonts",
-			"folderPath": "folders/Fonts.yy",
-			"name": "Fonts",
-			"resourceType": "GMFolder",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMFolder": "",
-			"%Name": "Notes",
-			"folderPath": "folders/Notes.yy",
-			"name": "Notes",
-			"resourceType": "GMFolder",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMFolder": "",
-			"%Name": "Objects",
-			"folderPath": "folders/Objects.yy",
-			"name": "Objects",
-			"resourceType": "GMFolder",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMFolder": "",
-			"%Name": "Particle Systems",
-			"folderPath": "folders/Particle Systems.yy",
-			"name": "Particle Systems",
-			"resourceType": "GMFolder",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMFolder": "",
-			"%Name": "Paths",
-			"folderPath": "folders/Paths.yy",
-			"name": "Paths",
-			"resourceType": "GMFolder",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMFolder": "",
-			"%Name": "Rooms",
-			"folderPath": "folders/Rooms.yy",
-			"name": "Rooms",
-			"resourceType": "GMFolder",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMFolder": "",
-			"%Name": "Scripts",
-			"folderPath": "folders/Scripts.yy",
-			"name": "Scripts",
-			"resourceType": "GMFolder",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMFolder": "",
-			"%Name": "Sequences",
-			"folderPath": "folders/Sequences.yy",
-			"name": "Sequences",
-			"resourceType": "GMFolder",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMFolder": "",
-			"%Name": "Shaders",
-			"folderPath": "folders/Shaders.yy",
-			"name": "Shaders",
-			"resourceType": "GMFolder",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMFolder": "",
-			"%Name": "Sounds",
-			"folderPath": "folders/Sounds.yy",
-			"name": "Sounds",
-			"resourceType": "GMFolder",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMFolder": "",
-			"%Name": "Sprites",
-			"folderPath": "folders/Sprites.yy",
-			"name": "Sprites",
-			"resourceType": "GMFolder",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMFolder": "",
-			"%Name": "Tile Sets",
-			"folderPath": "folders/Tile Sets.yy",
-			"name": "Tile Sets",
-			"resourceType": "GMFolder",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMFolder": "",
-			"%Name": "Timelines",
-			"folderPath": "folders/Timelines.yy",
-			"name": "Timelines",
-			"resourceType": "GMFolder",
-			"resourceVersion": "2.0"
-		}
-	],
-	"IncludedFiles": [
-		{
-			"$GMIncludedFile": "",
-			"%Name": "cut_scene_placeholder.mp4",
-			"CopyToMask": -1,
-			"filePath": "datafiles",
-			"name": "cut_scene_placeholder.mp4",
-			"resourceType": "GMIncludedFile",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMIncludedFile": "",
-			"%Name": "intro.mp4",
-			"CopyToMask": -1,
-			"filePath": "datafiles",
-			"name": "intro.mp4",
-			"resourceType": "GMIncludedFile",
-			"resourceVersion": "2.0"
-		},
-		{
-			"$GMIncludedFile": "",
-			"%Name": "intro2.mp4",
-			"CopyToMask": -1,
-			"filePath": "datafiles",
-			"name": "intro2.mp4",
-			"resourceType": "GMIncludedFile",
-			"resourceVersion": "2.0"
-		}
-	],
-	"isEcma": false,
-	"LibraryEmitters": [],
-	"MetaData": {
-		"IDEVersion": "2024.4.1.152"
-	},
-	"name": "XPress 24",
-	"resources": [
-		{
-			"id": { "name": "obj_bridge", "path": "objects/obj_bridge/obj_bridge.yy" }
-		},
-		{
-			"id": { "name": "obj_camera", "path": "objects/obj_camera/obj_camera.yy" }
-		},
-		{ "id": { "name": "obj_draw", "path": "objects/obj_draw/obj_draw.yy" } },
-		{
-			"id": {
-				"name": "obj_enemy_spider",
-				"path": "objects/obj_enemy_spider/obj_enemy_spider.yy"
-			}
-		},
-		{ "id": { "name": "obj_init", "path": "objects/obj_init/obj_init.yy" } },
-		{
-			"id": {
-				"name": "obj_intro_video",
-				"path": "objects/obj_intro_video/obj_intro_video.yy"
-			}
-		},
-		{ "id": { "name": "obj_menu", "path": "objects/obj_menu/obj_menu.yy" } },
-		{
-			"id": {
-				"name": "obj_outro_video",
-				"path": "objects/obj_outro_video/obj_outro_video.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "obj_parent_depthobject",
-				"path": "objects/obj_parent_depthobject/obj_parent_depthobject.yy"
-			}
-		},
-		{
-			"id": { "name": "obj_player", "path": "objects/obj_player/obj_player.yy" }
-		},
-		{ "id": { "name": "obj_rock", "path": "objects/obj_rock/obj_rock.yy" } },
-		{ "id": { "name": "obj_sound", "path": "objects/obj_sound/obj_sound.yy" } },
-		{
-			"id": {
-				"name": "obj_throwable",
-				"path": "objects/obj_throwable/obj_throwable.yy"
-			}
-		},
-		{ "id": { "name": "obj_tree", "path": "objects/obj_tree/obj_tree.yy" } },
-		{
-			"id": {
-				"name": "obj_trigger_dig",
-				"path": "objects/obj_trigger_dig/obj_trigger_dig.yy"
-			}
-		},
-		{ "id": { "name": "intro", "path": "rooms/intro/intro.yy" } },
-		{ "id": { "name": "outro", "path": "rooms/outro/outro.yy" } },
-		{ "id": { "name": "world", "path": "rooms/world/world.yy" } },
-		{
-			"id": {
-				"name": "draw_element",
-				"path": "scripts/draw_element/draw_element.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "draw_item_square",
-				"path": "scripts/draw_item_square/draw_item_square.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "scr_initialize_controller",
-				"path": "scripts/scr_initialize_controller/scr_initialize_controller.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "sound_background",
-				"path": "sounds/sound_background/sound_background.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "sound_blood",
-				"path": "sounds/sound_blood/sound_blood.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "sound_crickets",
-				"path": "sounds/sound_crickets/sound_crickets.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "sound_efforts",
-				"path": "sounds/sound_efforts/sound_efforts.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "sound_footstep",
-				"path": "sounds/sound_footstep/sound_footstep.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "sound_glassbreak",
-				"path": "sounds/sound_glassbreak/sound_glassbreak.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "sound_paper",
-				"path": "sounds/sound_paper/sound_paper.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "sound_portal",
-				"path": "sounds/sound_portal/sound_portal.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "sound_punch",
-				"path": "sounds/sound_punch/sound_punch.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "sound_scream",
-				"path": "sounds/sound_scream/sound_scream.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "sound_slice",
-				"path": "sounds/sound_slice/sound_slice.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "sound_taking_damage",
-				"path": "sounds/sound_taking_damage/sound_taking_damage.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "sound_whoosh",
-				"path": "sounds/sound_whoosh/sound_whoosh.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_enemy_spider_idle_down_left",
-				"path": "sprites/spr_enemy_spider_idle_down_left/spr_enemy_spider_idle_down_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_enemy_spider_idle_up_left",
-				"path": "sprites/spr_enemy_spider_idle_up_left/spr_enemy_spider_idle_up_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_enemy_spider_walk_down_left",
-				"path": "sprites/spr_enemy_spider_walk_down_left/spr_enemy_spider_walk_down_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_enemy_spider_walk_up_left",
-				"path": "sprites/spr_enemy_spider_walk_up_left/spr_enemy_spider_walk_up_left.yy"
-			}
-		},
-		{
-			"id": { "name": "spr_bridge", "path": "sprites/spr_bridge/spr_bridge.yy" }
-		},
-		{ "id": { "name": "spr_flask", "path": "sprites/spr_flask/spr_flask.yy" } },
-		{
-			"id": {
-				"name": "spr_left_hand",
-				"path": "sprites/spr_left_hand/spr_left_hand.yy"
-			}
-		},
-		{ "id": { "name": "spr_map", "path": "sprites/spr_map/spr_map.yy" } },
-		{
-			"id": {
-				"name": "spr_player_craft_down_left",
-				"path": "sprites/spr_player_craft_down_left/spr_player_craft_down_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_craft_down",
-				"path": "sprites/spr_player_craft_down/spr_player_craft_down.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_craft_left",
-				"path": "sprites/spr_player_craft_left/spr_player_craft_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_craft_up_left",
-				"path": "sprites/spr_player_craft_up_left/spr_player_craft_up_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_craft_up",
-				"path": "sprites/spr_player_craft_up/spr_player_craft_up.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_idle_down_left",
-				"path": "sprites/spr_player_idle_down_left/spr_player_idle_down_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_idle_down",
-				"path": "sprites/spr_player_idle_down/spr_player_idle_down.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_idle_left",
-				"path": "sprites/spr_player_idle_left/spr_player_idle_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_idle_up_left",
-				"path": "sprites/spr_player_idle_up_left/spr_player_idle_up_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_idle_up",
-				"path": "sprites/spr_player_idle_up/spr_player_idle_up.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_punch_down_left",
-				"path": "sprites/spr_player_punch_down_left/spr_player_punch_down_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_punch_down",
-				"path": "sprites/spr_player_punch_down/spr_player_punch_down.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_punch_left",
-				"path": "sprites/spr_player_punch_left/spr_player_punch_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_punch_up_left",
-				"path": "sprites/spr_player_punch_up_left/spr_player_punch_up_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_punch_up",
-				"path": "sprites/spr_player_punch_up/spr_player_punch_up.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_throw_down_left",
-				"path": "sprites/spr_player_throw_down_left/spr_player_throw_down_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_throw_down",
-				"path": "sprites/spr_player_throw_down/spr_player_throw_down.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_throw_left",
-				"path": "sprites/spr_player_throw_left/spr_player_throw_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_throw_up_left",
-				"path": "sprites/spr_player_throw_up_left/spr_player_throw_up_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_throw_up",
-				"path": "sprites/spr_player_throw_up/spr_player_throw_up.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_walk_down_left",
-				"path": "sprites/spr_player_walk_down_left/spr_player_walk_down_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_walk_down",
-				"path": "sprites/spr_player_walk_down/spr_player_walk_down.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_walk_left",
-				"path": "sprites/spr_player_walk_left/spr_player_walk_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_walk_up_left",
-				"path": "sprites/spr_player_walk_up_left/spr_player_walk_up_left.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_player_walk_up",
-				"path": "sprites/spr_player_walk_up/spr_player_walk_up.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_right_hand",
-				"path": "sprites/spr_right_hand/spr_right_hand.yy"
-			}
-		},
-		{
-			"id": {
-				"name": "spr_target_direction",
-				"path": "sprites/spr_target_direction/spr_target_direction.yy"
-			}
-		},
-		{
-			"id": { "name": "spr_tree_1", "path": "sprites/spr_tree_1/spr_tree_1.yy" }
-		},
-		{
-			"id": { "name": "spr_tree_2", "path": "sprites/spr_tree_2/spr_tree_2.yy" }
-		},
-		{
-			"id": { "name": "spr_tree_3", "path": "sprites/spr_tree_3/spr_tree_3.yy" }
-		},
-		{
-			"id": { "name": "spr_tree_4", "path": "sprites/spr_tree_4/spr_tree_4.yy" }
-		},
-		{
-			"id": { "name": "spr_tree_5", "path": "sprites/spr_tree_5/spr_tree_5.yy" }
-		},
-		{
-			"id": { "name": "spr_tree_6", "path": "sprites/spr_tree_6/spr_tree_6.yy" }
-		},
-		{ "id": { "name": "spr_rock", "path": "sprites/spr_rock/spr_rock.yy" } },
-		{ "id": { "name": "spr_tree", "path": "sprites/spr_tree/spr_tree.yy" } }
-	],
-	"resourceType": "GMProject",
-	"resourceVersion": "2.0",
-	"RoomOrderNodes": [
-		{ "roomId": { "name": "intro", "path": "rooms/intro/intro.yy" } },
-		{ "roomId": { "name": "world", "path": "rooms/world/world.yy" } },
-		{ "roomId": { "name": "outro", "path": "rooms/outro/outro.yy" } }
-	],
-	"templateType": "game",
-	"TextureGroups": [
-		{
-			"$GMTextureGroup": "",
-			"%Name": "Default",
-			"autocrop": true,
-			"border": 2,
-			"compressFormat": "bz2",
-			"customOptions": "",
-			"directory": "",
-			"groupParent": null,
-			"isScaled": true,
-			"loadType": "default",
-			"mipsToGenerate": 0,
-			"name": "Default",
-			"resourceType": "GMTextureGroup",
-			"resourceVersion": "2.0",
-			"targets": -1
-		}
-	]
+  "$GMProject":"",
+  "%Name":"XPress 24",
+  "AudioGroups":[
+    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+  ],
+  "configs":{
+    "children":[],
+    "name":"Default",
+  },
+  "defaultScriptType":1,
+  "Folders":[
+    {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sequences","folderPath":"folders/Sequences.yy","name":"Sequences","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Shaders","folderPath":"folders/Shaders.yy","name":"Shaders","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
+  ],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"cut_scene_placeholder.mp4","CopyToMask":-1,"filePath":"datafiles","name":"cut_scene_placeholder.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"intro.mp4","CopyToMask":-1,"filePath":"datafiles","name":"intro.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"intro2.mp4","CopyToMask":-1,"filePath":"datafiles","name":"intro2.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
+  "isEcma":false,
+  "LibraryEmitters":[],
+  "MetaData":{
+    "IDEVersion":"2024.4.1.152",
+  },
+  "name":"XPress 24",
+  "resources":[
+    {"id":{"name":"obj_arrow","path":"objects/obj_arrow/obj_arrow.yy",},},
+    {"id":{"name":"obj_bridge","path":"objects/obj_bridge/obj_bridge.yy",},},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+    {"id":{"name":"obj_draw","path":"objects/obj_draw/obj_draw.yy",},},
+    {"id":{"name":"obj_enemy_spider","path":"objects/obj_enemy_spider/obj_enemy_spider.yy",},},
+    {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},},
+    {"id":{"name":"obj_intro_video","path":"objects/obj_intro_video/obj_intro_video.yy",},},
+    {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
+    {"id":{"name":"obj_objective_target","path":"objects/obj_objective_target/obj_objective_target.yy",},},
+    {"id":{"name":"obj_outro_video","path":"objects/obj_outro_video/obj_outro_video.yy",},},
+    {"id":{"name":"obj_parent_depthobject","path":"objects/obj_parent_depthobject/obj_parent_depthobject.yy",},},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_rock","path":"objects/obj_rock/obj_rock.yy",},},
+    {"id":{"name":"obj_sound","path":"objects/obj_sound/obj_sound.yy",},},
+    {"id":{"name":"obj_throwable","path":"objects/obj_throwable/obj_throwable.yy",},},
+    {"id":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},},
+    {"id":{"name":"obj_trigger_dig","path":"objects/obj_trigger_dig/obj_trigger_dig.yy",},},
+    {"id":{"name":"intro","path":"rooms/intro/intro.yy",},},
+    {"id":{"name":"outro","path":"rooms/outro/outro.yy",},},
+    {"id":{"name":"world","path":"rooms/world/world.yy",},},
+    {"id":{"name":"draw_element","path":"scripts/draw_element/draw_element.yy",},},
+    {"id":{"name":"draw_item_square","path":"scripts/draw_item_square/draw_item_square.yy",},},
+    {"id":{"name":"scr_initialize_controller","path":"scripts/scr_initialize_controller/scr_initialize_controller.yy",},},
+    {"id":{"name":"sound_background","path":"sounds/sound_background/sound_background.yy",},},
+    {"id":{"name":"sound_blood","path":"sounds/sound_blood/sound_blood.yy",},},
+    {"id":{"name":"sound_crickets","path":"sounds/sound_crickets/sound_crickets.yy",},},
+    {"id":{"name":"sound_efforts","path":"sounds/sound_efforts/sound_efforts.yy",},},
+    {"id":{"name":"sound_footstep","path":"sounds/sound_footstep/sound_footstep.yy",},},
+    {"id":{"name":"sound_glassbreak","path":"sounds/sound_glassbreak/sound_glassbreak.yy",},},
+    {"id":{"name":"sound_paper","path":"sounds/sound_paper/sound_paper.yy",},},
+    {"id":{"name":"sound_portal","path":"sounds/sound_portal/sound_portal.yy",},},
+    {"id":{"name":"sound_punch","path":"sounds/sound_punch/sound_punch.yy",},},
+    {"id":{"name":"sound_scream","path":"sounds/sound_scream/sound_scream.yy",},},
+    {"id":{"name":"sound_slice","path":"sounds/sound_slice/sound_slice.yy",},},
+    {"id":{"name":"sound_taking_damage","path":"sounds/sound_taking_damage/sound_taking_damage.yy",},},
+    {"id":{"name":"sound_whoosh","path":"sounds/sound_whoosh/sound_whoosh.yy",},},
+    {"id":{"name":"spr_bridge","path":"sprites/spr_bridge/spr_bridge.yy",},},
+    {"id":{"name":"spr_enemy_spider_idle_down_left","path":"sprites/spr_enemy_spider_idle_down_left/spr_enemy_spider_idle_down_left.yy",},},
+    {"id":{"name":"spr_enemy_spider_idle_up_left","path":"sprites/spr_enemy_spider_idle_up_left/spr_enemy_spider_idle_up_left.yy",},},
+    {"id":{"name":"spr_enemy_spider_walk_down_left","path":"sprites/spr_enemy_spider_walk_down_left/spr_enemy_spider_walk_down_left.yy",},},
+    {"id":{"name":"spr_enemy_spider_walk_up_left","path":"sprites/spr_enemy_spider_walk_up_left/spr_enemy_spider_walk_up_left.yy",},},
+    {"id":{"name":"spr_flask","path":"sprites/spr_flask/spr_flask.yy",},},
+    {"id":{"name":"spr_left_hand","path":"sprites/spr_left_hand/spr_left_hand.yy",},},
+    {"id":{"name":"spr_map","path":"sprites/spr_map/spr_map.yy",},},
+    {"id":{"name":"spr_player_craft_down_left","path":"sprites/spr_player_craft_down_left/spr_player_craft_down_left.yy",},},
+    {"id":{"name":"spr_player_craft_down","path":"sprites/spr_player_craft_down/spr_player_craft_down.yy",},},
+    {"id":{"name":"spr_player_craft_left","path":"sprites/spr_player_craft_left/spr_player_craft_left.yy",},},
+    {"id":{"name":"spr_player_craft_up_left","path":"sprites/spr_player_craft_up_left/spr_player_craft_up_left.yy",},},
+    {"id":{"name":"spr_player_craft_up","path":"sprites/spr_player_craft_up/spr_player_craft_up.yy",},},
+    {"id":{"name":"spr_player_idle_down_left","path":"sprites/spr_player_idle_down_left/spr_player_idle_down_left.yy",},},
+    {"id":{"name":"spr_player_idle_down","path":"sprites/spr_player_idle_down/spr_player_idle_down.yy",},},
+    {"id":{"name":"spr_player_idle_left","path":"sprites/spr_player_idle_left/spr_player_idle_left.yy",},},
+    {"id":{"name":"spr_player_idle_up_left","path":"sprites/spr_player_idle_up_left/spr_player_idle_up_left.yy",},},
+    {"id":{"name":"spr_player_idle_up","path":"sprites/spr_player_idle_up/spr_player_idle_up.yy",},},
+    {"id":{"name":"spr_player_punch_down_left","path":"sprites/spr_player_punch_down_left/spr_player_punch_down_left.yy",},},
+    {"id":{"name":"spr_player_punch_down","path":"sprites/spr_player_punch_down/spr_player_punch_down.yy",},},
+    {"id":{"name":"spr_player_punch_left","path":"sprites/spr_player_punch_left/spr_player_punch_left.yy",},},
+    {"id":{"name":"spr_player_punch_up_left","path":"sprites/spr_player_punch_up_left/spr_player_punch_up_left.yy",},},
+    {"id":{"name":"spr_player_punch_up","path":"sprites/spr_player_punch_up/spr_player_punch_up.yy",},},
+    {"id":{"name":"spr_player_throw_down_left","path":"sprites/spr_player_throw_down_left/spr_player_throw_down_left.yy",},},
+    {"id":{"name":"spr_player_throw_down","path":"sprites/spr_player_throw_down/spr_player_throw_down.yy",},},
+    {"id":{"name":"spr_player_throw_left","path":"sprites/spr_player_throw_left/spr_player_throw_left.yy",},},
+    {"id":{"name":"spr_player_throw_up_left","path":"sprites/spr_player_throw_up_left/spr_player_throw_up_left.yy",},},
+    {"id":{"name":"spr_player_throw_up","path":"sprites/spr_player_throw_up/spr_player_throw_up.yy",},},
+    {"id":{"name":"spr_player_walk_down_left","path":"sprites/spr_player_walk_down_left/spr_player_walk_down_left.yy",},},
+    {"id":{"name":"spr_player_walk_down","path":"sprites/spr_player_walk_down/spr_player_walk_down.yy",},},
+    {"id":{"name":"spr_player_walk_left","path":"sprites/spr_player_walk_left/spr_player_walk_left.yy",},},
+    {"id":{"name":"spr_player_walk_up_left","path":"sprites/spr_player_walk_up_left/spr_player_walk_up_left.yy",},},
+    {"id":{"name":"spr_player_walk_up","path":"sprites/spr_player_walk_up/spr_player_walk_up.yy",},},
+    {"id":{"name":"spr_right_hand","path":"sprites/spr_right_hand/spr_right_hand.yy",},},
+    {"id":{"name":"spr_rock","path":"sprites/spr_rock/spr_rock.yy",},},
+    {"id":{"name":"spr_target_direction","path":"sprites/spr_target_direction/spr_target_direction.yy",},},
+    {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},},
+  ],
+  "resourceType":"GMProject",
+  "resourceVersion":"2.0",
+  "RoomOrderNodes":[
+    {"roomId":{"name":"intro","path":"rooms/intro/intro.yy",},},
+    {"roomId":{"name":"world","path":"rooms/world/world.yy",},},
+    {"roomId":{"name":"outro","path":"rooms/outro/outro.yy",},},
+  ],
+  "templateType":"game",
+  "TextureGroups":[
+    {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
+  ],
 }
