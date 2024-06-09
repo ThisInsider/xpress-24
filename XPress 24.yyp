@@ -40,6 +40,7 @@
   "resources":[
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_draw","path":"objects/obj_draw/obj_draw.yy",},},
+    {"id":{"name":"obj_enemy_spider","path":"objects/obj_enemy_spider/obj_enemy_spider.yy",},},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},},
     {"id":{"name":"obj_intro_video","path":"objects/obj_intro_video/obj_intro_video.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
@@ -69,6 +70,10 @@
     {"id":{"name":"sound_slice","path":"sounds/sound_slice/sound_slice.yy",},},
     {"id":{"name":"sound_taking_damage","path":"sounds/sound_taking_damage/sound_taking_damage.yy",},},
     {"id":{"name":"sound_whoosh","path":"sounds/sound_whoosh/sound_whoosh.yy",},},
+    {"id":{"name":"spr_enemy_spider_idle_down_left","path":"sprites/spr_enemy_spider_idle_down_left/spr_enemy_spider_idle_down_left.yy",},},
+    {"id":{"name":"spr_enemy_spider_idle_up_left","path":"sprites/spr_enemy_spider_idle_up_left/spr_enemy_spider_idle_up_left.yy",},},
+    {"id":{"name":"spr_enemy_spider_walk_down_left","path":"sprites/spr_enemy_spider_walk_down_left/spr_enemy_spider_walk_down_left.yy",},},
+    {"id":{"name":"spr_enemy_spider_walk_up_left","path":"sprites/spr_enemy_spider_walk_up_left/spr_enemy_spider_walk_up_left.yy",},},
     {"id":{"name":"spr_flask","path":"sprites/spr_flask/spr_flask.yy",},},
     {"id":{"name":"spr_left_hand","path":"sprites/spr_left_hand/spr_left_hand.yy",},},
     {"id":{"name":"spr_map","path":"sprites/spr_map/spr_map.yy",},},
