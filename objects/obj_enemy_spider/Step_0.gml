@@ -1,14 +1,22 @@
-if(distance_to_object(obj_player) < 200){
-	speed = move_speed*(delta_time/10000);
-	direction = point_direction(x,y, obj_player.x, obj_player.y);
-}else{
-	speed = 0;
-}
+if(state == ENEMY_STATES.IDLE || state == ENEMY_STATES.WALKING){
+	if(distance_to_object(obj_player) < 200){
+		speed = move_speed*(delta_time/10000);
+		direction = point_direction(x,y, obj_player.x, obj_player.y);
+	}else{
+		speed = 0;
+	}
 
-if(speed > 0){
-	state = ENEMY_STATES.WALKING;
-}else{
-	state = ENEMY_STATES.IDLE;
+	if(speed > 0){
+		state = ENEMY_STATES.WALKING;
+	}else{
+		state = ENEMY_STATES.IDLE;
+	}
+}else if(state == ENEMY_STATES.RETREATING){
+	age++;
+	if(age > display_get_frequency()*1){
+		age = 0;
+		state = ENEMY_STATES.IDLE;
+	}
 }
 
 var _sprite_direction = floor((direction)/90);
@@ -41,6 +49,7 @@ switch(state){
 		_state = "idle";
 		break;
 	case ENEMY_STATES.WALKING:
+	case ENEMY_STATES.RETREATING:
 		_state = "walk";
 		break;
 	case ENEMY_STATES.ATTACKING:

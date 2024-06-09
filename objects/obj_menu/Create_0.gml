@@ -1,13 +1,19 @@
+
 enum ELEMENTS {
 	CL,
 	FE,
 	MG,
 	NI,
 	S,
-	ZN
+	ZN,
 }
 
+fe_collected = false;
 
+pressed_e = 0;
+e_complete = false;
+show_press_q = false;
+pressed_q = false;
 
 is_menu_open = false;
 

@@ -6,8 +6,10 @@ enum PLAYER_STATES {
 	CRAFTING
 }
 enum ITEMS {
-	FLASK
+	PEBBLE
 }
+
+final_count = 0;
 
 age = 8;
 last_played = 0;
@@ -21,8 +23,8 @@ state = PLAYER_STATES.IDLE;
 mouse_target_x = 0;
 mouse_target_y = 0;
 
-inventory = [ITEMS.FLASK, undefined, undefined, undefined];
-hand = [ELEMENTS.CL, ELEMENTS.FE, ELEMENTS.MG, ELEMENTS.NI, ELEMENTS.S, ELEMENTS.ZN];
+inventory = [ITEMS.PEBBLE, undefined, undefined, undefined];
+hand = [];
 selected_slot = 0;
 
 // target direction

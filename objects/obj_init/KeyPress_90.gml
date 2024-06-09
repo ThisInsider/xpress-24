@@ -1,14 +1,12 @@
 zoom += 0.5;
-var _w = camera_get_view_width(view_camera[0])*zoom;
-var _h = camera_get_view_height(view_camera[0])*zoom;
+var _w = 640*zoom;
+var _h = 360*zoom;
 if(_w > display_get_width() || _h > display_get_height()){
 	zoom = 1;
-	_w = camera_get_view_width(view_camera[0]);
-	_h = camera_get_view_height(view_camera[0]);
+	_w = 640;
+	_h = 360;
 }
-view_wport[0] = _w;
-view_hport[0] = _h;
 surface_resize(application_surface, _w, _h);
-display_set_gui_size(camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]));
+display_set_gui_size(640, 360);
 window_set_size(_w, _h);
 window_center();

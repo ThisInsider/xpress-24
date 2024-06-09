@@ -2,6 +2,13 @@
 	var _move_vertical = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 	var _move_horizontal =  keyboard_check(ord("D")) - keyboard_check(ord("A"));
 	
+if(array_length(hand) >= 6){
+	final_count++;
+	if(final_count > display_get_frequency()*3){
+		room_goto(outro);
+	}
+}
+	
 if(!obj_menu.is_menu_open){
 
 	switch (keyboard_key)
@@ -52,13 +59,13 @@ if(!obj_menu.is_menu_open){
 		mouse_target_y = window_view_mouse_get_y(0);
 		direction = point_direction(0, 0, mouse_target_x-x, mouse_target_y-y);
 		switch(inventory[selected_slot]){
-			case ITEMS.FLASK:
+			case ITEMS.PEBBLE:
 				state = PLAYER_STATES.THROWING;
 				image_index = 0;
 				target_speed = 0;
 				var _spr = spr_player_throw_down;
 				alarm[0] = (sprite_get_number(_spr)/sprite_get_speed(_spr))*display_get_frequency();
-				alarm[2] = (16/sprite_get_speed(_spr))*display_get_frequency();
+				alarm[2] = (14/sprite_get_speed(_spr))*display_get_frequency();
 		}
 	}
 }else{

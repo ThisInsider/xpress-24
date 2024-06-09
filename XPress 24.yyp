@@ -27,9 +27,8 @@
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"cut_scene_placeholder.mp4","CopyToMask":-1,"filePath":"datafiles","name":"cut_scene_placeholder.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"intro.mp4","CopyToMask":-1,"filePath":"datafiles","name":"intro.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"intro2.mp4","CopyToMask":-1,"filePath":"datafiles","name":"intro2.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"outro.mp4","CopyToMask":-1,"filePath":"datafiles","name":"outro.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -86,8 +85,11 @@
     {"id":{"name":"spr_enemy_spider_walk_down_left","path":"sprites/spr_enemy_spider_walk_down_left/spr_enemy_spider_walk_down_left.yy",},},
     {"id":{"name":"spr_enemy_spider_walk_up_left","path":"sprites/spr_enemy_spider_walk_up_left/spr_enemy_spider_walk_up_left.yy",},},
     {"id":{"name":"spr_flask","path":"sprites/spr_flask/spr_flask.yy",},},
+    {"id":{"name":"spr_key_e","path":"sprites/spr_key_e/spr_key_e.yy",},},
+    {"id":{"name":"spr_key_q","path":"sprites/spr_key_q/spr_key_q.yy",},},
     {"id":{"name":"spr_left_hand","path":"sprites/spr_left_hand/spr_left_hand.yy",},},
     {"id":{"name":"spr_map","path":"sprites/spr_map/spr_map.yy",},},
+    {"id":{"name":"spr_pebble","path":"sprites/spr_pebble/spr_pebble.yy",},},
     {"id":{"name":"spr_player_craft_down_left","path":"sprites/spr_player_craft_down_left/spr_player_craft_down_left.yy",},},
     {"id":{"name":"spr_player_craft_down","path":"sprites/spr_player_craft_down/spr_player_craft_down.yy",},},
     {"id":{"name":"spr_player_craft_left","path":"sprites/spr_player_craft_left/spr_player_craft_left.yy",},},
@@ -122,8 +124,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"intro","path":"rooms/intro/intro.yy",},},
-    {"roomId":{"name":"world","path":"rooms/world/world.yy",},},
     {"roomId":{"name":"outro","path":"rooms/outro/outro.yy",},},
+    {"roomId":{"name":"world","path":"rooms/world/world.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

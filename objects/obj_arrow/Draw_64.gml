@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-target_x = obj_objective_target.x;
-target_y = obj_objective_target.y;
+target_x = target.x;
+target_y = target.y;
 
 var delta_x = target_x - obj_player.x;
 var delta_y = target_y - obj_player.y;
