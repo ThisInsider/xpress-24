@@ -7,7 +7,7 @@ game_set_speed(_fps, gamespeed_fps);
 
 zoom = 1;
 
-zoom += 0.5;
+zoom += 1.5;
 var _w = 640*zoom;
 var _h = 360*zoom;
 if(_w > display_get_width() || _h > display_get_height()){

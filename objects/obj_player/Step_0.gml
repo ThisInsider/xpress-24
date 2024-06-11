@@ -143,3 +143,26 @@ switch(state){
 }
 
 sprite_index = asset_get_index("spr_player_"+_state+"_"+_sprite_direction);
+
+if (keyboard_check_pressed(vk_space)) {
+	audio_play_sound(sound_punch, 1, false);
+	audio_play_sound(sound_efforts, 1, false);
+}
+
+if (keyboard_check_pressed(ord("E"))) {
+	audio_play_sound(sound_paper, 1, false);
+}
+
+if (keyboard_check_pressed(ord("Q"))) {
+	audio_play_sound(sound_whoosh, 1, false);
+}
+
+
+
+
+
+
+
+
+
+

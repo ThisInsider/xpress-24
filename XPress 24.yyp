@@ -69,6 +69,7 @@
     {"id":{"name":"sound_paper","path":"sounds/sound_paper/sound_paper.yy",},},
     {"id":{"name":"sound_portal","path":"sounds/sound_portal/sound_portal.yy",},},
     {"id":{"name":"sound_punch","path":"sounds/sound_punch/sound_punch.yy",},},
+    {"id":{"name":"sound_rockthrow","path":"sounds/sound_rockthrow/sound_rockthrow.yy",},},
     {"id":{"name":"sound_scream","path":"sounds/sound_scream/sound_scream.yy",},},
     {"id":{"name":"sound_slice","path":"sounds/sound_slice/sound_slice.yy",},},
     {"id":{"name":"sound_taking_damage","path":"sounds/sound_taking_damage/sound_taking_damage.yy",},},
